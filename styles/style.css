@@ -1,0 +1,131 @@
+body {
+    background-image: url('../images/background.jpg');
+}
+
+.wholePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.sentence {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.buttons {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 8px;
+}
+
+.letterBtn {
+    margin-bottom: 50px;
+    /* box-shadow: 0px 0px 0px 0px #ffffff; */
+	background-color:transparent;
+	border-radius:15px;
+	border: 5px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+    font-family: 'Space Grotesk', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 12px 17px;
+	text-decration:none;
+	/* text-shadow:0px 1px 0px #ffffff; */
+}
+.letterBtn:hover {
+	background-color:transparent;
+}
+.letterBtn:active {
+	position:relative;
+	top: 10px;
+}
+.letterBtn:disabled {
+    border: 1px solid #999999;
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.2;
+    font-size: 16px;
+    /* background-color: rgb(34, 33, 33); */
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 3px;
+        margin-bottom: 20px;
+    }
+    .letterBtn {
+        margin-bottom: 5px;
+        /* box-shadow: 0px 0px 0px 0px #ffffff; */
+        background-color:transparent;
+        border-radius:15px;
+        border: 5px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#666666;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 17px;
+        text-decration:none;
+        /* text-shadow:0px 1px 0px #ffffff; */
+    }
+}
+
+.blanks {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.canva {
+	border:4px solid;
+	border-radius:15px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.reset, .again {
+    background-color:transparent;
+    border-radius:15px;
+    border:4px solid #dcdcdc;
+    display:inline-block;
+	cursor:pointer;
+	color:#666666;
+    font-family: 'Space Grotesk', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 12px 17px;
+}
+.reset:active {
+	position:relative;
+	top: 10px;
+}
+.again:active {
+	position:relative;
+	top: 10px;
+}

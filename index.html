@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANGMAN GAME</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="wholePage">
+    <h1 class="title">HANGMAN</h1>
+    <p class="sentence">Use the alphabet below to guess the word.</p>
+    <div class="buttons">
+      <!-- <button class="letterBtn" value=""></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button><button class="letterBtn"></button> -->
+      <button value="a" class="letterBtn">a</button><button value="b" class="letterBtn">b</button><button value="c" class="letterBtn">c</button><button value="d" class="letterBtn">d</button><button value="e" class="letterBtn">e</button><button value="f" class="letterBtn">f</button><button value="g" class="letterBtn">g</button><button value="h" class="letterBtn">h</button><button value="i" class="letterBtn">i</button><button value="j" class="letterBtn">j</button><button value="k" class="letterBtn">k</button><button value="l" class="letterBtn">l</button><button value="m" class="letterBtn">m</button><button value="n" class="letterBtn">n</button><button value="o" class="letterBtn">o</button><button value="p" class="letterBtn">p</button><button value="q" class="letterBtn">q</button><button value="r" class="letterBtn">r</button><button value="s" class="letterBtn">s</button><button value="t" class="letterBtn">t</button><button value="u" class="letterBtn">u</button><button value="v" class="letterBtn">v</button><button value="w" class="letterBtn">w</button><button value="x" class="letterBtn">x</button><button value="y" class="letterBtn">y</button><button value="z" class="letterBtn">z</button>
+    </div>
+    <div class="blanks">
+      <!-- DOM Nodes -->
+    </div>
+    <div class="counter">
+      <p><span class="livesLeft"></span></p>
+    </div>
+    <div class="canva">
+      <!-- DOM Node -->
+      <canvas id="canvas" width="150">Your browser does not support HTML5 Canvas.</canvas>
+    </div>
+    <div class="twoButtons">
+      <!-- <button class="reset">Reset</button> -->
+      <button class="again">Play again</button>  
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
